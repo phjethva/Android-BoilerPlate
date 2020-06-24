@@ -1,0 +1,17 @@
+<resources>
+    <!--Android 8.1 - Oreo-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--Hide StatusBar-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--<item name="android:windowBackground">@null</item>-->
+
+        <!--NavigationBar Color-->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+    </style>
+
+</resources>

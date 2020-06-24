@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.phjethva.boilerplate"
+        minSdkVersion 17
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+		vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+	dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation project (":toast")
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.0'
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+
+    implementation group: 'androidx.constraintlayout', name: 'constraintlayout', version: '2.0.0-beta7'
+    implementation group: 'com.google.android.material', name: 'material', version: '1.3.0-alpha01'
+
+    //RecyclerView & CardView
+    implementation group: 'androidx.recyclerview', name: 'recyclerview', version: '1.2.0-alpha03'
+    implementation group: 'androidx.recyclerview', name: 'recyclerview-selection', version: '1.1.0-rc01'
+    implementation group: 'androidx.cardview', name: 'cardview', version: '1.0.0'
+
+    implementation group: 'androidx.swiperefreshlayout', name: 'swiperefreshlayout', version: '1.1.0-rc01'
+    implementation group: 'androidx.percentlayout', name: 'percentlayout', version: '1.0.0'
+
+    //Life-Cycle Components
+    implementation group: 'androidx.lifecycle', name: 'lifecycle-viewmodel', version: '2.3.0-alpha04'
+    implementation group: 'androidx.lifecycle', name: 'lifecycle-livedata', version: '2.3.0-alpha04'
+    implementation group: 'androidx.lifecycle', name: 'lifecycle-extensions', version: '2.2.0'
+    annotationProcessor group: 'androidx.lifecycle', name: 'lifecycle-common-java8', version: '2.3.0-alpha04'
+
+    //RxJava - ReactiveX
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.19'
+    implementation group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.1.1'
+
+    //Dagger - Dependency Injection
+    implementation group: 'com.google.dagger', name: 'dagger', version: '2.27'
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-compiler', version: '2.27'
+    implementation group: 'com.google.dagger', name: 'dagger-android', version: '2.27'
+    implementation group: 'com.google.dagger', name: 'dagger-android-support', version: '2.27'
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-android-processor', version: '2.27'
+
+    //Retrofit - HTTP Client
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.8.1'
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.8.1'
+    implementation group: 'com.squareup.retrofit2', name: 'adapter-rxjava2', version: '2.8.1'
+
+    //Gson - Java-JSON Serialization/Deserialization
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+
+    //Coil - Image Download & Caching
+    implementation group: 'io.coil-kt', name: 'coil', version: '0.11.0'
+
+    //Room Database
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+
+    //Firebase Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.4.3'
+    //Firebase Push Notification
+    implementation 'com.google.firebase:firebase-messaging:20.2.1'
+    //Firebase Realtime Database
+
+    //Google AdMob Ads
+    implementation 'com.google.android.gms:play-services-ads:19.2.0'
+    //Unity Ads
+    implementation 'com.unity3d.ads:unity-ads:3.4.2'
+
+    //MultiDex Support
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //JUnit Testing
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}
+//For Firebase Services Integration
+//apply plugin: 'com.google.gms.google-services'
+//Aaa google-services.json file inside 'app' folder

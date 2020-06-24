@@ -1,0 +1,36 @@
+<resources>
+
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorAccent">#b0bec5</color>
+
+    <color name="colorBGPri">#ffffff</color>
+    <color name="colorBGSec">#f7f7f7</color>
+    <color name="colorTextPri">#000000</color>
+    <color name="colorTextSec">#212121</color>
+
+    <color name="colorNull">#00000000</color>
+
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorWhite1">#92ffffff</color>
+    <color name="colorWhite2">#64ffffff</color>
+    <color name="colorWhite3">#32ffffff</color>
+    <color name="colorWhite4">#16ffffff</color>
+
+    <color name="colorBlack">#ff000000</color>
+    <color name="colorBlack1">#92000000</color>
+    <color name="colorBlack2">#64000000</color>
+    <color name="colorBlack3">#32000000</color>
+    <color name="colorBlack4">#16000000</color>
+
+    <color name="colorGrey">#ff808080</color>
+    <color name="colorGrey1">#92808080</color>
+    <color name="colorGrey2">#64808080</color>
+    <color name="colorGrey3">#32808080</color>
+    <color name="colorGrey4">#16808080</color>
+
+    <color name="colorRed">#ef0000</color>
+    <color name="colorGreen">#00bf00</color>
+    <color name="colorBlue">#0000ef</color>
+
+</resources>

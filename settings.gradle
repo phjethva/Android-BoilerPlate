@@ -1,0 +1,5 @@
+rootProject.name = "BoilerPlate"
+include ':app'
+include ':java-lib'
+include ':kotlin-lib'
+include ':toast'

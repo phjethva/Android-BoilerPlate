@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">BoilerPlate</string>
+
+    <!-- Progress Success & Error -->
+    <string name="please_wait">Loading...\nPlease Wait...</string>
+    <string name="server_error">Something Went Wrong!\nTry Later...</string>
+
+    <!-- Menu Popup/List -->
+    <string name="action_rate">Rate This App</string>
+    <string name="action_share">Share This App</string>
+    <string name="action_more_app">Our More Apps</string>
+    <string name="action_exit">Exit</string>
+
+    <!-- Exit Dialog -->
+    <string name="alert_exit_title">Sure To EXIT?</string>
+    <string name="alert_exit_message">Rate &amp; Share This App Before Exit?</string>
+    <string name="alert_rate">RATE</string>
+    <string name="alert_share">SHARE</string>
+    <string name="alert_exit">EXIT</string>
+    <string name="dont_ask_again">Don\'t Ask Again!</string>
+
+    <!-- Rate & Share Content -->
+    <string name="strUriRating">https://play.google.com/store/apps/details?id=com.pjetapps.sandq</string>
+    <string name="strShareIntro">Share App Using: </string>
+    <string name="strUriShare">Checkout Status Quotes Pro App:\nbit.ly/sandq</string>
+    <string name="strUriMoreAppAndroid">market://search?q=pub: PJET APPS</string>
+    <string name="strUriMoreAppWeb">https://play.google.com/store/search?q=pub: PJET APPS</string>
+    <string name="chk_out">Checkout Status Quotes Pro App:\nbit.ly/sandq</string>
+
+    <!-- AdMob Ad Test Ids -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ad_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_native_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ok">Ok</string>
+
+</resources>
